@@ -39,5 +39,10 @@ button.addEventListener("click", async () => {
 	console.log(tabIds);
 	const group = await chrome.tabs.group({ tabIds });
 	console.log(group);
-	await chrome.tabGroups.update(group, { title: "DOCS" });
+	await chrome.tabGroups.update(group, { title: "RED", color: "red" });
+});
+const ungroupButton = document.querySelector("#ungroup");
+ungroupButton.addEventListener("click", async () => {
+	const tabIds = tabs.map((tab) => tab.id);
+	await chrome.tabs.ungroup(tabIds);
 });

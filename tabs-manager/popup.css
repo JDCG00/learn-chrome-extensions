@@ -12,10 +12,10 @@ li {
 	padding: 0.25rem;
 }
 li:nth-child(odd) {
-	background: #80808030;
+	background: #99f1bb;
 }
 li:nth-child(even) {
-	background: #ffffff;
+	background: #59dac8;
 }
 
 h3,
